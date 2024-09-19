@@ -1,7 +1,7 @@
 import displayLoadingScreen from '../lib/loading.js'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-  let pp = 'https://i.pinimg.com/736x/eb/a7/25/eba725b9c8df5d9b199e950694f18aaf.jpg'
+  let pp = 'https://files.catbox.moe/8324jm.jpg'
   await displayLoadingScreen(conn, m.chat)
   let _muptime
   if (process.send) {
@@ -26,12 +26,12 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       },
       forwardingScore: 999,
       externalAdReply: {
-        title: 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ',
+        title: 'THE SILVA BOT',
         body: 'R U N T I M E',
         thumbnailUrl: pp,
-        sourceUrl: 'https://guruapi.tech',
+        sourceUrl: 'https://whatsapp.com/channel/0029VaAkETLLY6d8qhLmZt2v',
         mediaType: 1,
-        renderLargerThumbnail: false,
+        renderLargerThumbnail: true,
       },
     },
   })
