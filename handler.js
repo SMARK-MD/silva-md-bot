@@ -230,7 +230,7 @@ export async function handler(chatUpdate) {
             let data = (await conn.onWhatsApp(jid))[0] || {}
             if (data.exists)
               m.reply(
-                `*🗂️ Plugin:* ${name}\n*👤 Sender:* ${m.sender}\n*💬 Chat:* ${m.chat}\n*💻 Command:* ${m.text}\n\n\${format(e)}`.trim(),
+                `*SILVA MD BOT\n🗂️ Plugin:* ${name}\n*👤 Sender:* ${m.sender}\n*💬 Chat:* ${m.chat}\n*💻 Command:* ${m.text}\n\n\${format(e)}`.trim(),
                 data.jid
               )
           }
@@ -423,7 +423,7 @@ export async function handler(chatUpdate) {
                 let data = (await this.onWhatsApp(jid))[0] || {}
                 if (data.exists)
                   return m.reply(
-                    `*🗂️ Plugin:* ${m.plugin}\n*👤 Sender:* ${m.sender}\n*💬 Chat:* ${m.chat}\n*💻 Command:* ${usedPrefix}${command} ${args.join(' ')}\n📄 *Error Logs:*\n\n${text}`.trim(),
+                    `*SILVA MD\n🗂️ Plugin:* ${m.plugin}\n*👤 Sender:* ${m.sender}\n*💬 Chat:* ${m.chat}\n*💻 Command:* ${usedPrefix}${command} ${args.join(' ')}\n📄 *Error Logs:*\n\n${text}`.trim(),
                     data.jid
                   )
               }
@@ -556,10 +556,10 @@ export async function participantsUpdate({ id, participants, action }) {
                 contextInfo: {
                   mentionedJid: [user],
                   externalAdReply: {
-                    title: 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ',
+                    title: 'THE SILVA MD BOT',
                     body: 'welcome to Group',
                     thumbnailUrl: welcomeApiUrl,
-                    sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                    sourceUrl: 'https://whatsapp.com/channel/0029VaAkETLLY6d8qhLmZt2v',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                   },
@@ -613,10 +613,10 @@ export async function participantsUpdate({ id, participants, action }) {
                 contextInfo: {
                   mentionedJid: [user],
                   externalAdReply: {
-                    title: 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ',
+                    title: 'THE SILVA BOT',
                     body: 'Goodbye from  Group',
                     thumbnailUrl: leaveApiUrl,
-                    sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                    sourceUrl: 'https://whatsapp.com/channel/0029VaAkETLLY6d8qhLmZt2v',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                   },
@@ -765,7 +765,7 @@ export async function deleteUpdate(message) {
     await this.reply(
       conn.user.id,
       `
-            ≡ deleted a message 
+            ≡ silva md deleted a message 
             ┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 
             ▢ *Number :* @${participant.split`@`[0]} 
             └─────────────
