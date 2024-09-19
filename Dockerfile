@@ -1,8 +1,8 @@
 FROM quay.io/gurusensei/gurubhay:latest
 
-RUN git clone https://github.com/Guru322/GURU-Ai /root/guru
+RUN git clone https://github.com/SMARK-MD/silva-md-bot /root/silva
 
-WORKDIR /root/guru/
+WORKDIR /root/silva/
 
 RUN npm install --platform=linuxmusl
 
